@@ -1,8 +1,9 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     $(document).ready(function () {
         var localServer = 'http://192.168.1.2:8000';
         var liveServer = 'https://cem.soussidev.com';
-        var server  = liveServer;
+        var server  = localServer;
         function uploadStudentsList(secret) {
             $.ajaxSetup({ async: false });
             $.get("https://amatti.education.gov.dz/scolarite/dossier_eleves/eleves", function (data, status) {
